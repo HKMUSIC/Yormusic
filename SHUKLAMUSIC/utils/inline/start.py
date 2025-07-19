@@ -22,13 +22,16 @@ def private_panel(_):
             InlineKeyboardButton(
                 text=_["S_B_3"],
                 url=f"https://t.me/{app.username}?startgroup=true",
+                [
+            InlineKeyboardButton("ALL BOTS", callback_data="all_bots"),
+            InlineKeyboardButton("PROMOTION ", callback_data="promo"),
+        ],
             )
         ],
         [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
         [
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
-            InlinekeyboardButton(text=_["S_B_10"], callback_data="other_bot_1")],
         ],
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
